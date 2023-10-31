@@ -6,6 +6,7 @@ class HomPages extends StatelessWidget {
   HomPages({super.key});
 
   static String ruts = "/hompage";
+  final String agre = "Killer";
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,11 @@ class HomPages extends StatelessWidget {
           FloatingActionButton(
             heroTag: "a",
             onPressed: () {
-              Navigator.pushNamed(context, SettgsPages.ruts);
+              Navigator.pushNamed(
+                context,
+                SettgsPages.ruts,
+                arguments: agre,
+              );
             },
             child: Icon(Icons.settings),
           ),
@@ -35,7 +40,11 @@ class HomPages extends StatelessWidget {
           FloatingActionButton(
             heroTag: "b",
             onPressed: () {
-              Navigator.pushNamed(context, PersonPages.ruts);
+              Navigator.pushNamed(
+                context,
+                PersonPages.ruts,
+                arguments: agre,
+              );
             },
             child: Icon(Icons.person),
           ),

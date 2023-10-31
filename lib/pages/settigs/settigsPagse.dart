@@ -8,9 +8,10 @@ class SettgsPages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var argumet = ModalRoute.of(context)!.settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Settgs"),
+        title:  Text("Settgs $argumet"),
       ),
       body:  Center(
         child: Column(
