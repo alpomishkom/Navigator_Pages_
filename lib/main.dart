@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: HomPages.ruts,
       routes: {
         HomPages.ruts: (context) =>  HomPages(),
-        SettgsPages.ruts: (context) => SettgsPages(),
+        SettgsPages.ruts: (context) => SettgsPages(massage: "Alpomish"),
         PersonPages.ruts : (context) => PersonPages(),
         RegsPages.ruts : (context) => RegsPages(),
       },

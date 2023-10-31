@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:navigator_page_4/pages/profilPages/profiliPages.dart';
 
 class SettgsPages extends StatelessWidget {
-  const SettgsPages({super.key});
+  final String massage;
+  const SettgsPages({super.key, required this.massage});
 
   static String ruts = "/settgsage";
 
   @override
   Widget build(BuildContext context) {
-    var argumet = ModalRoute.of(context)!.settings.arguments;
+
     return Scaffold(
       appBar: AppBar(
-        title:  Text("Settgs $argumet"),
+        title:  Text("Settgs $massage"),
       ),
       body:  Center(
         child: Column(

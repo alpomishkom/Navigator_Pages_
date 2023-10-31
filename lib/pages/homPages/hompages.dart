@@ -6,12 +6,14 @@ class HomPages extends StatelessWidget {
   HomPages({super.key});
 
   static String ruts = "/hompage";
-  final String agre = "Killer";
+   String agre = "Killer";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        backgroundColor: Colors.white24,
+      ),
       appBar: AppBar(
         shadowColor: Colors.purple,
         foregroundColor: Colors.red,
